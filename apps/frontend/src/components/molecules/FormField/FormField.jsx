@@ -16,7 +16,7 @@ function FormField({
 
   return (
     <div>
-      <label htmlFor={id} className="mb-1.5 block text-sm font-medium text-form">
+      <label htmlFor={id} className="mb-4 block text-body-18 font-prompt font-medium text-form">
         {label}
       </label>
       <Input
@@ -33,11 +33,11 @@ function FormField({
         aria-describedby={describedBy}
       />
       {error ? (
-        <p id={`${id}-error`} role="alert" className="mt-1 text-sm text-red-500">
+        <p id={`${id}-error`} role="alert" className="mt-1 text-body-15 text-red-400">
           {error}
         </p>
       ) : hint ? (
-        <p id={`${id}-hint`} className="mt-1 text-sm text-form-muted">
+        <p id={`${id}-hint`} className="mt-1 text-body-15 text-form-muted">
           {hint}
         </p>
       ) : null}

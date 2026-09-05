@@ -7,9 +7,9 @@ function Checkbox({ id, name, label, checked = false, onChange }) {
         name={name}
         checked={checked}
         onChange={onChange}
-        className="h-4 w-4 cursor-pointer rounded border-line bg-transparent text-brand focus:ring-brand/50"
+        className="h-4 w-4 cursor-pointer rounded border-2 border-[#888] bg-transparent text-brand focus:ring-brand/50"
       />
-      <span className="text-sm text-form">{label}</span>
+      <span className="text-body-15 text-form font-prompt">{label}</span>
     </label>
   )
 }

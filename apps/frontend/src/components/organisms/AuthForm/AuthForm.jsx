@@ -52,10 +52,10 @@ function AuthForm({
 
   return (
     <form onSubmit={handleSubmit} noValidate>
-      <h1 className="text-2xl font-semibold text-form">{title}</h1>
-      {subtitle && <p className="mt-1 text-sm text-form-muted">{subtitle}</p>}
+      <h1 className="text-display-31 font-promptSemiBold text-form mb-8 lg:text-[31px]">{title}</h1>
+      {subtitle && <p className="mt-4 text-display-22 text-form-muted">{subtitle}</p>}
 
-      <div className="mt-6 flex flex-col gap-5">
+      <div className="mt-24 flex flex-col gap-32">
         {fields.map((field) => (
           <FormField
             key={field.id}
@@ -73,7 +73,7 @@ function AuthForm({
       </div>
 
       {(showRememberMe || forgotPasswordHref) && (
-        <div className="mt-4 flex items-center justify-between gap-2">
+        <div className="mt-24 flex items-center justify-between gap-3">
           {showRememberMe && (
             <Checkbox
               id="remember"
@@ -86,7 +86,7 @@ function AuthForm({
           {forgotPasswordHref && (
             <a
               href={forgotPasswordHref}
-              className="ml-auto text-sm font-medium text-accent hover:underline"
+              className="ml-auto text-body-15 font-medium text-form hover:underline"
             >
               {forgotPasswordLabel}
             </a>
@@ -100,13 +100,13 @@ function AuthForm({
 
       {showSocials && (
         <>
-          <div className="my-6 flex items-center gap-3">
-            <span className="h-px flex-1 bg-input/50" />
-            <span className="text-sm text-form-muted">ou</span>
-            <span className="h-px flex-1 bg-input/50" />
+          <div className="my-24 flex items-center gap-3">
+            <span className="h-px flex-1 bg-line/50" />
+            <span className="text-body-15 text-form-muted">ou</span>
+            <span className="h-px flex-1 bg-line/50" />
           </div>
           {secureNote && (
-            <p className="mb-6 flex items-center justify-center gap-2 text-sm text-form-muted">
+            <p className="mb-24 flex items-center justify-center gap-2 text-body-15 text-form-muted">
               <span aria-hidden>🔒</span>
               {secureNote}
             </p>
@@ -115,7 +115,7 @@ function AuthForm({
         </>
       )}
 
-      {footer && <div className="mt-6">{footer}</div>}
+      {footer && <div className="mt-24">{footer}</div>}
     </form>
   )
 }

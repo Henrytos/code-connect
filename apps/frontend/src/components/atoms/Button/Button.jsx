@@ -11,8 +11,8 @@ const VARIANTS = {
 }
 
 const SIZES = {
-  md: 'px-4 py-2.5 text-sm',
-  lg: 'px-5 py-3 text-base',
+  md: 'px-4 py-2.5 text-body-15',
+  lg: 'px-5 py-3 text-body-18',
 }
 
 function Button({
@@ -26,7 +26,7 @@ function Button({
   className = '',
 }) {
   const classes = [
-    'inline-flex items-center justify-center gap-2 rounded-lg font-medium',
+    'inline-flex items-center justify-center gap-2 rounded-lg font-medium font-prompt',
     'transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand/50',
     'disabled:cursor-not-allowed disabled:opacity-50',
     VARIANTS[variant],

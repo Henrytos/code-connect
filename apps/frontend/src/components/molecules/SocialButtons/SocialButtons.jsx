@@ -5,7 +5,7 @@ import Icon from '../../atoms/Icon/Icon.jsx'
 // (the mockup shows two social entry points side by side at the bottom)
 function SocialButtons({ onGoogleClick, onGitHubClick }) {
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-24">
       <Button variant="secondary" onClick={onGoogleClick} fullWidth>
         <Icon name="google" alt="Ícone do Google" />
         Google

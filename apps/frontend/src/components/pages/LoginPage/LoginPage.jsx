@@ -43,9 +43,9 @@ function LoginPage() {
         forgotPasswordHref="#"
         fields={LOGIN_FIELDS}
         footer={
-          <p className="text-center text-sm text-form-muted">
+          <p className="text-center text-body-15 text-form-muted font-prompt">
             Novo aqui?{' '}
-            <a href="#" className="font-medium text-accent hover:underline">
+            <a href="#" className="font-medium text-brand hover:underline font-prompt">
               Criar conta
             </a>
           </p>
