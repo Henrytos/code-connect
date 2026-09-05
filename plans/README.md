@@ -14,6 +14,8 @@
 | 04 | [04-componentes.md](04-componentes.md) | Spec de cada componente (props, variantes, a11y, responsividade) |
 | 05 | [05-testes.md](05-testes.md) | Estratégia de testes por componente + comandos |
 | 06 | [06-reuso-cadastro.md](06-reuso-cadastro.md) | Contrato de reuso: como a futura tela de cadastro consumirá os componentes |
+| 07 | [07-fidelidade-mobile.md](07-fidelidade-mobile.md) | Fidelidade mobile/tablet (Figma 155:3661) — layout, tokens, especificações |
+| 08 | [08-fidelidade-desktop.md](08-fidelidade-desktop.md) | Fidelidade desktop (Figma 155:3785) — layout, tokens, especificações |
 
 ## Checklist de execução
 
@@ -23,6 +25,8 @@
 - [x] **Fase 4 — Organism + Template + Page** (doc 04): `AuthForm`, `AuthLayout`, `LoginPage`
 - [x] **Fase 5 — Testes** (doc 05): `*.test.jsx` para todos os componentes
 - [x] **Fase 6 — Verificação** (doc 03): test + lint + build + comparação visual
+- [ ] **Fase 7 — Fidelidade Mobile** (doc 07): ajustes para Figma 155:3661
+- [ ] **Fase 8 — Fidelidade Desktop** (doc 08): ajustes para Figma 155:3785
 
 ## Árvore de componentes
 
